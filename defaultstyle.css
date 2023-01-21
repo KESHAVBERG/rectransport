@@ -1,134 +1,80 @@
-*
+body
 {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
 }
+main {
+    flex: 1 0 auto;
+  }
+      
+/* NAV BAR */
 
 nav
 {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: #232323;
-    font-family: 'Montserrat', sans-serif;
+    background-color: black;
 }
-nav ul li:hover
+
+nav ul a
+{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: auto 1.5rem auto 1.5rem;
+}
+nav ul a:hover
 {
     background-color: violet;
 }
-.nav-links
-{
-   
-    display: flex;
-    justify-content: space-around;
-    /* width: 30%; */
-}
 
-.logo
+.brand-logo
 {
-    color: #ffffff;
     letter-spacing: 10px;
-    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 3rem;
 }
-.nav-links a
+.sidenav
 {
-    color: #FFFFFF;
-    text-align: center;
-    padding: 1em 2em 1em 3em;
-    text-decoration: none;
-    letter-spacing: 2px;
+    background-color: black;
+}
+.sidenav li a
+{
+    margin: 1rem auto 1rem auto;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.sidenav li a:hover
+{
+    background-color: violet;
+}
+
+/* BUTTONS with dates*/
+
+.btn
+{
+    background-color: #0731ad;
+    font-weight: bolder;
+    margin:50px;
+
+}
+.btn:hover
+{
+    background-color:lightcoral;
+    color: #fff;;
+}
+
+#today
+{
+    font-size: 2rem;
     font-weight: bold;
-    font-size: 15px;
 }
 
-.line
+footer
 {
-    display: none;
-}
-.line div
-{
-    width: 25px;
-    height: 5px;
-    background-color: #ffffff;
-    margin: 5px;
-    transition: all .3s ease;
+    text-align: center;
+    padding: 2% 5%;
 }
 
-@media screen and (max-width:901px)
-{
-    .nav-links a 
-    {
-        padding: 0 15px;
-    }
-}
-
-@media screen and (max-width:768px)
-{
-    body
-    {
-        overflow-x: hidden;
-    }
-    .nav-links    
-    {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #232323;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-
-    }
-
-    .nav-links li
-    {
-        opacity: 0;
-    }
-    .line
-    {
-        display: block;
-        position: relative;
-        left: 100px;
-        cursor: pointer;
-    }
-}
-
-.nav-active
-{
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade
-{
-    from
-    {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    to
-    {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .line1
-{
-    transform:rotate(-45deg) translate(-7px,7px);
-}
-.toggle .line2
-{
-    opacity: 0;
-}
-.toggle .line3
-{
-    transform:rotate(45deg) translate(-7px,-7px);
-}
