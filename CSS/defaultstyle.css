@@ -1,0 +1,182 @@
+body
+{
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+}
+main {
+    flex: 1 0 auto;
+  }
+      
+/* NAV BAR */
+
+nav
+{
+    background-color: black;
+}
+
+nav ul a
+{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: auto 1.5rem auto 1.5rem;
+}
+nav ul a:hover
+{
+    background-color: violet;
+}
+
+.brand-logo
+{
+    letter-spacing: 10px;
+    font-weight: bolder;
+    margin-left: 3rem;
+}
+.sidenav
+{
+    background-color: black;
+}
+.sidenav li a
+{
+    margin: 1rem auto 1rem auto;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.sidenav li a:hover
+{
+    background-color: violet;
+}
+
+/* BUTTONS with dates*/
+
+.btn
+{
+    background-color: #0731ad;
+    font-weight: bolder;
+    margin:1.5rem;
+
+}
+.btn:hover
+{
+    background-color:lightcoral;
+    color: #fff;;
+}
+
+#today
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width:444px)
+{
+    .btn
+    {
+        margin: 2rem;
+    }    
+}
+
+/* *container quick view*/ 
+ #quick-view{
+    background-color:655DBB;
+    /* text-align: center; */
+    margin-bottom: 2rem;
+    } 
+#title-quick-view{
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+
+}
+/* inside quick-view*/
+.in-return{
+    font-size: 1.35rem;
+    font-weight: bold;
+    color:red;
+    /* margin-left: 20px;
+    margin-bottom: 20px; */
+}
+
+.quick-content
+{
+    margin: .75rem;
+
+}
+
+/*Show pop-up and timing*/
+
+.highlight{
+    color:#c0ee09;
+    font-size: 23px;
+    /*text-decoration:rgb(243, 157, 29)underline;*/
+    text-decoration:#c0ee09,underline ;
+}
+/* Other texts inside Quick-view*/
+.in-return a{
+    text-decoration: underline;
+    font-size: 120%;
+    color:#f5f6f3;
+    font-weight: bold;
+    text-shadow:#1ea149;
+}
+/* place and counts*/
+.in-return div span{
+    color:rgb(12, 238, 201);
+}
+#return-5pm div  a{
+    color:#c0ee09;
+}
+/* Moving (marquee tag)*/
+marquee{
+    font-size: 23px;
+    color:red; 
+}  
+marquee span{
+    color:#fff;
+}
+button {
+    text-decoration:#c0ee09,underline ;
+    border: none;
+    font-size: 120%;
+    padding: 2px;
+    background-color: #944646;
+    color: #fff;
+    font-weight:500;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+
+  
+
+/* TABLE */
+.table
+{
+    /* margin-top: 2rem; */
+    font-weight: bold;
+    padding: 3% 5%;
+}
+
+.table a
+{
+    font-size: 1.2rem;
+}
+th
+{
+    font-size: 1.3rem;
+}
+
+.fooicon-plus:before {
+    content: "►";
+    color: black;
+   
+  }
+
+.fooicon-minus:before {
+    content: "▼";
+    color: black;
+  }

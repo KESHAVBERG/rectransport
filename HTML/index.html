@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+    <!-- MaterializeCss -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- -- -->  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Sofia+Sans+Semi+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <!-- FooTable CSS -->
+    <link rel="stylesheet" href="../CSS/footable.standalone.min.css">
+
+
+    <!-- Css links -->
+    <link rel="stylesheet" href="../CSS/defaultstyle.css">
+
+  
+
+     <!-- -- -->
+    <!-- FontAwesomes -->
+    <script src="https://kit.fontawesome.com/20bfb18169.js" crossorigin="anonymous"></script>
+    <!-- -- -->
+    <title>Rectransport</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="https://www.rajalakshmi.org/" class="brand-logo center-modified">REC</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="">Routes</a></li>
+            <li><a href="">Feedback</a></li>
+            <li><a href="">Search</a></li>
+            <li><a href="">All routes map</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li class="active"><a href="">Home</a></li>
+        <li><a href="">Routes</a></li>
+        <li><a href="">Feedback</a></li>
+        <li><a href="">Search</a></li>
+        <li><a href="">All routes map</a></li>
+      </ul>
+
+      <div class="btns row center">
+        <a class="waves-effect waves-light btn center-align date" id="dt1"></a>
+        <a class="waves-effect waves-light btn date " id="dt2"></a>
+        <a class="waves-effect waves-light btn date " id="dt3"></a>
+        <a class="waves-effect waves-light btn date " id="dt4"></a>
+        <a class="waves-effect waves-light btn date " id="dt5"></a>
+        <a class="waves-effect waves-light btn date " id="dt6"></a>
+        <a class="waves-effect waves-light btn date " id="dt7"></a>
+    </div>
+    <p class="row center date" id="today"></p>
+   
+    <!--Container for quick view-->
+    <div class="container" id="quick-view">
+      <h5 id="title-quick-view">Quick view</h5>
+      
+
+      <div id="return-1pm" class="in-return">
+       <a>Return after  <span  class="highlight"> 1pm</span></a>
+       <div class="quick-content"><span> 1 </span>  bus to <span>Koyambedu</span></div>
+      </div>
+
+      <div id="return-3pm" class="in-return">
+       <a>Return after  <span  class="highlight"> 3.15pm</span></a>
+       <div class="quick-content"><span> 96 </span>  buses in <span> all </span> routes</div>
+      </div>
+
+      <div id="return-5pm"class="in-return">
+       <a>Return after  <span class="highlight"> 5pm</span></a>
+       <div class="quick-content"><span> 1 </span>  bus to <span> Tambaram </span>
+         
+        <a class="modal-trigger"href="#modal1">show</a>
+       </div>
+       <div class="quick-content"><span> 1 </span>  bus to <span> Kovilambakkam </span> 
+        <a class="modal-trigger"href="#modal1">show</a>
+       </div>
+       <div class="quick-content"><span> 1 </span>  bus to <span> Central </span> 
+        <a class="modal-trigger"href="#modal1">show</a>
+         </dialog>
+       </div>
+       <div class="quick-content"><span> 1 </span>  bus to <span> Ambattur(Rakki Theatre) </span> 
+        <a class="modal-trigger"href="#modal1">show</a>
+       </div>
+       <div class="quick-content"><span> 1 </span>  bus to <span> Kanchipuram </span> 
+        <a class="modal-trigger"href="#modal1">show</a>
+       </div>
+      </div>
+      <marquee hspace="20%">No <span> buses via </span>Ponamalle</marquee>
+      
+   </div>
+
+    <!-- BUS TABLES -->
+    
+    <table class=" striped table footable toggle-arrow" >
+      <thead>
+        <tr>
+            <th data-breakpoints="xs,sm,lg,md"> S.No</th>
+            <th data-breakpoints="xs,sm,lg,md"> Route No.</th>
+            <th data-breakpoints="xs,sm,lg,md"> Route Name</th>
+            <th data-breakpoints="xs,sm,lg,md"> Boarding Points</th>
+            <th data-breakpoints="xs,sm,lg,md"> Start Time</th>
+            <th data-breakpoints="xs" >Return Time</th>
+            <th data-breakpoints="xs">College Campus</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Red Hills Thachoor Koot Road</td>
+          <td>Eclair</td>
+          <td>$0.87</td>
+          <td> <a class="modal-trigger"href="#modal1">show</a></td>
+          <td>56</td>
+          <td>5.10</td>
+          <td>7.45</td>
+        </tr>
+        <tr>
+          <td>Alan</td>
+          <td>Jellybean</td>
+          <td>rough</td>
+          <td> <a class="modal-trigger"href="#modal2">show</a></td>
+          <td>$3.76</td>
+        </tr>
+        <tr>
+          <td>Jonathan</td>
+          <td>Lollipop</td>
+          <td>rough2</td>
+          <td> <a class="modal-trigger"href="#modal3">show</a></td>
+          <td>$7.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+   <!-- MODALS FOR SHOW ROUTE   -->
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <table>
+      <thead>
+        <tr>
+          <th>Stop</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>tambaram</td>
+          <td>5.35</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <h4>Route</h4>
+    <p>Chengalpet</p>
+    <p>Chrompet</p>
+  </div>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <h4>Route</h4>
+    <p>Vadapalani</p>
+    <p>Chrompet</p>
+  </div>
+  </div>
+</div>
+
+<!-- 9fd1d4 -->
+  
+    <!-- Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="../JS/index.js"></script>
+
+    <!-- FooTable JS -->
+<script src="../JS/footable.min.js"></script>
+
+</body>
+</html>
